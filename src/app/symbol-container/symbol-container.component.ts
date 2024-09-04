@@ -19,7 +19,6 @@ export class SymbolContainerComponent implements OnInit{
 
   ngOnInit(): void {
     this.symbolService.symbolColor$.subscribe((symbolToColor: Symbol)=>{
-      console.log('symbolToColor', symbolToColor)
       this.symbolToBeColored = symbolToColor;
     })
   }
