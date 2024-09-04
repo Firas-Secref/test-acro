@@ -1,0 +1,23 @@
+
+.box{
+  width: 8rem;
+  height: 3rem;
+  border: thick double #445258;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.score{
+  width: 8rem;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  background: gray;
+  border: thick double #aeaeae;
+
+}
+.box-container:focus{
+  background-color: #d9edc3;
+}

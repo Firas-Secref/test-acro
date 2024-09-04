@@ -1,0 +1,10 @@
+<div class="flex-c">
+
+  @for (boxItem of boxes|async; track boxItem.index; let  i = $index){
+    <app-box [boxValue]="boxItem.value" (boxSelection)="setOrder(i+1, boxItem)" [boxIndex]="i+1"/>
+  }
+  <div>
+    <button (click)="clearBoxes()">clear</button>
+    <p>{{totalValue}}</p>
+  </div>
+</div>

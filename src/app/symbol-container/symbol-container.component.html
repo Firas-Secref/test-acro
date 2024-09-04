@@ -1,0 +1,33 @@
+<div class="symbol-container">
+<div>
+  <h3>{{CategoryEnum.FS}}</h3><br>
+  <div class="symbol-section" style="width: 10rem">
+    @for(sym of symbolsArrayFS; track sym.text){
+      <app-symbol-item [symbolObj]="sym"/>
+    }
+  </div>
+</div>
+
+<div>
+  <h3>{{CategoryEnum.BS}}</h3><br>
+  <div class="symbol-section" style="width: 52rem">
+
+    @for(sym of symbolsArrayBS; track sym.text){
+      <app-symbol-item [symbolToColor]="symbolToBeColored" (symbolSelection)="selectSymbol($event)" [symbolObj]="sym"/>
+    }
+  </div>
+</div>
+
+<div>
+    <h3>{{CategoryEnum.OTHER}}</h3><br>
+  <div class="symbol-section" style="width: 10rem">
+
+    @for(sym of symbolsArrayOther; track sym.text){
+      <app-symbol-item [symbolObj]="sym"/>
+    }
+  </div>
+</div>
+
+
+
+</div>
